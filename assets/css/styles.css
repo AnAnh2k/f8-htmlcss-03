@@ -26,11 +26,37 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  color: #ffffff;
+  --height: 60px;
+  min-width: 205px;
+  display: inline-block;
+  padding: 0 20px;
+  height: var(--height);
+  border-radius: 99px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: #2e80ce;
+  line-height: var(--height);
+  text-align: center;
+  border: 1px solid #2e80ce;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
 /* ======================== Header =================*/
 .header {
   padding-top: 30px;
   min-height: 100vh;
   background: var(--header-bg);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -78,4 +104,53 @@ a {
 .logo__brand--small {
   font-size: 1.2em;
   font-weight: 300;
+}
+
+/* navbar */
+.navbar {
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.header-action__login,
+.navbar__link {
+  color: #c9d2da;
+  padding: 4px 21px;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  text-shadow: 1px 0 0 currentColor;
+  color: #ffffff;
+}
+
+.navbar__link--active::before {
+  top: -2px;
+  left: -8px;
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.header-action {
+  display: flex;
+  align-items: center;
+}
+
+.header-action__login {
+  margin-right: 7px;
+}
+
+.header-action__signup {
+  font-weight: 400;
+  font-size: 1.6rem;
+  min-width: 104px;
+  --height: 44px;
 }
