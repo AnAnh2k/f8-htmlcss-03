@@ -520,3 +520,45 @@ a {
 .member__control-next-icon {
   rotate: 180deg;
 }
+
+/* ======================install============================ */
+.install {
+  margin-top: 180px;
+}
+
+.install__inner {
+  padding: 0 70px;
+  background: #2e80ce;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.install__img {
+  margin-top: -95px;
+  display: block;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+
+.install__content {
+  max-width: 586px;
+}
+
+.install__content--heading {
+  width: 489px;
+  color: #ffffff;
+}
+
+.install__content--desc {
+  width: 586px;
+  color: #fff;
+}
+
+.install__row {
+  margin-top: 38px;
+  display: flex;
+  gap: 0 28px;
+}
